@@ -2,11 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mouseover Example</title>
+  <title>Event Handler Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    p {
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <h1>JavaScript Event Handlers</h1>
+
+  <!-- Example 1: Mouseover / Mouseout -->
   <p onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">
-    Hover your mouse over this text
+    Hover your mouse over this text to change its color
   </p>
+
+  <!-- Example 2: Keyup -->
+  <input type="text" id="myInput" placeholder="Type something here...">
+  <p id="output"></p>
+
+  <script>
+    // Keyup event handler in JavaScript
+    document.getElementById("myInput").onkeyup = function() {
+      document.getElementById("output").textContent = "You typed: " + this.value;
+    };
+  </script>
 </body>
 </html>

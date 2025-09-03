@@ -2,17 +2,14 @@ function addition_Function() {
   const result = 2 + 2;
   document.getElementById("Addition").innerHTML = "2 + 2 = " + result;
 }
-
 function subtraction_Function() {
   const result = 10 - 3;
   document.getElementById("Subtraction").innerHTML = "10 - 3 = " + result;
 }
-
 function multiplication_Function() {
   const result = 6 * 7;
   document.getElementById("Multiplication").innerHTML = "6 × 7 = " + result;
 }
-
 function division_Function() {
   const result = 21 / 3;
   document.getElementById("Division").innerHTML = "21 ÷ 3 = " + result;
@@ -51,5 +48,20 @@ function math_object() {  //I am choosing the square root function
   const result = Math.sqrt(num);
   document.getElementById("math_object").innerHTML = "The square root of " + num + " is " + result;
 }
-
-    // It is working on all the operators
+function my_Dictionary() {
+  var Animal = {
+      Species: "Dog",
+      Color: "Black",
+      Breed: "Labrador",
+      Age: 5,
+      Sound: "Bark!"
+  }
+  document.getElementById("Dictionary").innerHTML = Animal.Sound;
+}  
+  
+  
+  
+  
+  
+  // It is working on all the operators
+  

@@ -2,15 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project6_ternary_operators_constructors</title>
-    <script src="js/main.js"></script>
+  <title>Keywords, Constructors, and New Keyword Example</title>
+  <script src="JS/main.js" defer></script>
 </head>
 <body>
-  <h1>Hello, Voters!</h1>
-  <p>Voters must be over 18 years old to vote</p>
-  <input id="Age" value="18" />
-  <button type="button" onclick="Ride_Function()">Check if you can vote</button>
-    <p id="Vote"></p>
+  <h2>Keywords, Constructors, and New Keyword</h2>
+
+  <!-- First button (Vehicle example) -->
+  <button onclick="showVehicle()">Show Vehicle</button>
+  <p id="Keywords_and_Constructors"></p>
+
+  <!-- Second button (Student example) -->
+  <button onclick="showStudent()">Show Student</button>
+  <p id="New_and_This"></p>
+
+    <!-- Button for reserved keyword test -->
+  <button onclick="reservedKeywordTest()">Test Reserved Word</button>
+  <p id="reserved"></p>
+
+  <!-- Button for constructor test -->
+  <button onclick="constructorTest()">Test Constructor</button>
+  <p id="constructor"></p>
+  
+    <!-- Nested Function Example -->
+  <p id="Nested_Function" onclick="outerFunction()">Click me to run nested function</p>
+
 </body>
 </html>

@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Local and Global Variable Assignment</title>
+  <!-- Keep the original script path and defer attribute exactly as before -->
   <script src="JS/main.js" defer></script>
 </head>
 <body>
   <h2>Local and Global Variable Demo</h2>
   <button onclick="testScope()">Run Scope Test</button>
   <p>Open Chrome DevTools (F12 → Console) to see the results.</p>
+
+  <!-- Previous greeting feature (unchanged) -->
+  <p id="greeting" onclick="displayGreeting()">Click here to see a greeting based on the time</p>
+
+  <!-- Previous time check feature (unchanged) -->
+  <p onclick="checkTimeOfDay()">Click here to check the time of day</p>
+
+  <!-- Age section (only the broken parts corrected) -->
+  <p>Write your Age</p>
+  <input id="Age" type="number" min="0" placeholder="Enter your age" />
+  <p id="Age_Result"></p>
+  <button onclick="Age_Function()">Click here</button>
 </body>
 </html>
+
+
 

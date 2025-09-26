@@ -21,4 +21,21 @@ function findWord() {
     let position = text.search("fun");  // returns 14
     document.getElementById("search_result").textContent = "Position: " + position;
 }
-
+function toString_Method() {
+    var X = 182;
+    document.getElementById("Numbers_to_string").innerHTML = X.toString();
+}
+function precision_Method() {
+    var X = 12938.3012987376112;
+    document.getElementById("Precision").innerHTML = X.toPrecision(10);
+}
+function fixed_Method() {
+    var num = 5.56789;
+    var n = num.toFixed(2);
+    document.getElementById("Fixed").innerHTML = n;
+}   
+function valueOf_Method() {
+    var str = "Hello World!";
+    var res = str.valueOf();
+    document.getElementById("Value").innerHTML = res;
+}   

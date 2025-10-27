@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Basic jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+    $(function () {
+      $("body").append(
+        "<div id='container'>\
+           <div id='inner'>\
+             <h1>Basic jQuery</h1>\
+             <p id='p1'>Paragraph 1</p>\
+             <p id='p2'>Paragraph 2</p>\
+             <p id='p3'>Paragraph 3</p>\
+           </div>\
+         </div>"
+      );
+
+      // style the second paragraph
+      $("#p2").css({ color: "red" });
+      // when the third paragraph is clicked, fade out the heading
+      $("#p3").on("click", function () {
+        $("h1").fadeOut(400); 
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+       
